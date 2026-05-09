@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>分镜生成器</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  
+  <div class="left">
+    <h2>🎬 分镜生成器</h2>
+
+    <textarea id="input" placeholder="粘贴原文..."></textarea>
+
+    <label>画风</label>
+    <select id="style">
+      <option>韩漫</option>
+      <option>日漫</option>
+      <option>电影感</option>
+    </select>
+
+    <label>模式</label>
+    <select id="mode">
+      <option>普通</option>
+      <option>爆款强化</option>
+    </select>
+
+    <input id="apikey" placeholder="输入你的OpenAI API Key" />
+
+    <button onclick="generate()">生成分镜</button>
+  </div>
+
+  <div class="right" id="result"></div>
+
+</div>
+
+<script src="renderer.js"></script>
+</body>
+</html>
